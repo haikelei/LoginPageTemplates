@@ -1,0 +1,119 @@
+.page-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    background-image: url('https://zeus-pic-bucket.oss-cn-hangzhou.aliyuncs.com/login-page-templates/bg-left.png'); /* 设置背景图片 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-top {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
+.left-bottom {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        margin-top: 20px;
+    }
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: 100%;
+    background: white;
+}
+
+.right-button-line {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.right-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 178px;
+    height: 48px;
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    border-radius: 24px;
+    color: #616161;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.underline-input-container {
+    margin-top: 26px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.underline-input-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.underline-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.underline-input:focus {
+    border-bottom-color: #007BFF;
+    box-shadow: none;
+    outline: none;
+}
