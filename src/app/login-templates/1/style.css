@@ -117,3 +117,42 @@
     box-shadow: none;
     outline: none;
 }
+
+.sign-line {
+    margin-top: 10px;
+    width: 378px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.sign-checkbox {
+    margin-right: 6px;
+}
+
+.sign-checkbox:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.sign-button {
+    background-color: #7B76F1;
+    border-radius: 50px;
+    width: 152px;
+    height: 56px;
+    color: white;
+}
+
+.jump-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}

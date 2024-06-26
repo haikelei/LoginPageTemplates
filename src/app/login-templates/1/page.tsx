@@ -1,11 +1,15 @@
+'use client';
+
 import './style.css';
 import Image from 'next/image';
+
 import { useState } from 'react';
 
 export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <main className='page-main'>
@@ -57,15 +61,44 @@ export default function LoginPage() {
           </div>
           <div className='underline-input-container'>
             <label className='underline-input-label'>用户名</label>
-            <input className='underline-input' />
+            <input
+              className='underline-input'
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
           </div>
           <div className='underline-input-container'>
             <label className='underline-input-label'>邮箱</label>
-            <input className='underline-input' />
+            <input
+              className='underline-input'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className='underline-input-container'>
             <label className='underline-input-label'>密码</label>
-            <input className='underline-input' />
+            <input
+              className='underline-input'
+              type={'password'}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div className='sign-line'>
+            <div>
+              <input
+                type={'checkbox'}
+                className='sign-checkbox'
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
+              <span className='user-text'>我同意接受用户条款</span>
+            </div>
+            <button className='sign-button'>注册</button>
+          </div>
+          <div className='jump-line'>
+            <span className='user-text'>已有账号？</span>
+            <span className='jump-text'>去登录</span>
           </div>
         </div>
       </div>
